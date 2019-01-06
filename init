@@ -1,0 +1,3 @@
+#!/bin/sh
+
+smbd -i -s /data/smb.conf

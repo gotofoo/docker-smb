@@ -1,0 +1,10 @@
+#!/bin/sh
+
+if grep -xq $1 /data/users
+then
+	echo "User exists already"
+else
+	adduser -D -H -s /sbin/nologin $1
+	smbpasswd -a -c /data/smb.conf $1
+	echo $1 >> /data/users
+fi
