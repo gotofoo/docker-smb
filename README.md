@@ -5,7 +5,7 @@ SMB File Server
 0.  Become root:
 
     ```
-    sodu su
+    sudo su
     ```
 1.  Create a folder for storing the samba configuration and database files
 2.  Run the container:
@@ -27,12 +27,12 @@ The following commands are available for the administration of the server.
 
 ### Add a new user
 
-    ```
-    docker exec -it smb useradd <username>
-    ```
+```
+docker exec -it smb useradd <username>
+```
 
 ### Change the password of a User
 
-    ```
-    docker exec -it smb passwd <username>
-    ```
+```
+docker exec -it smb passwd <username>
+```
